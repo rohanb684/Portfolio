@@ -1,0 +1,32 @@
+.top-projects{
+    height: 80vh;
+    margin-top: 8rem;
+    background: rgb(48, 48, 48);
+    border-radius: 15px;
+    box-shadow: 0 20px 30px rgba(211, 209, 209, 0.1); 
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    
+}
+
+.top-projects--header{
+    color: white;
+    font-size: 5rem;
+}
+
+
+.cards{
+    height: 75%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 8rem;
+    border-radius: 1rem;
+}
+
+.btn{
+    width: 9rem;
+}

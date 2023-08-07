@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+
+.hero-section{   
+    height: calc(100vh - 8rem);
+    color: white;    
+    display: flex;
+}
+
+.hero-left{
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    padding-top: 15rem;
+    gap: 8rem;
+}
+.hero-left--name{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.hero-left--name{
+    color: #c95a5a;
+    font-size: 6rem;
+}
+.typewritter{
+    font-size: 5rem ;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* .Typewriter__wrapper.data{
+    font-size: 5rem;
+}
+.Typewriter__wrapper.turned{
+    font-size: 5rem;
+    color: greenyellow;
+}
+.frontend{
+    font-size: 20rem;
+    color: #c95a5a;
+} */
+.Typewriter__cursor{
+    font-size: 6.5rem;
+    color: hsl(0, 51%, 57%);
+}
+.hero-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.7;
+    height: 80%;
+    margin-top: 3rem;
+}
+
+.img-container{
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 20px 30px rgba(184, 168, 168, 0.1); 
+    border-radius: 0.2rem;
+         }
+.img-container img {
+    height: 100%;
+}
+
+

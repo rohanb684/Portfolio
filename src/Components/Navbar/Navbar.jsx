@@ -17,6 +17,7 @@ const Navbar = () => {
 
   return (
     <>
+    <div className="nav-wrapper">
     <div className="container navbar">
       <div className="nav-left">
         <h2>Portfolio<span>.</span></h2>
@@ -51,6 +52,7 @@ const Navbar = () => {
           <AiOutlineCloseCircle className={`close-icon ${isMenuOpen ? "active" : ""}` } onClick={()=>{setIsMenuOpen((prev)=>!prev)}}/>
         </div>
       </div>
+    </div>
     </div>
     {/* <div className={`nav-mobile-menu ${isMenuOpen ? "active" : ""}`}>
             <div className="nav-mobile-item"><NavLink className="link">Home</NavLink></div>

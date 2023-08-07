@@ -1,0 +1,9 @@
+.education{
+    padding-left: 3rem;
+}
+
+.education ul li{
+    font-size: 2rem;
+    list-style: none;
+    margin-bottom: 3rem;
+}
