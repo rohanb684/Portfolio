@@ -1,0 +1,46 @@
+.projects{
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-header h2{
+    color: rgb(179, 188, 190);
+    font-size: 7rem;
+    margin-bottom: 3rem;
+}
+
+.all-projects{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    /* height: 40rem; */
+}
+
+/* ------media queries------- */
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+
+/* lg */
+@media (max-width: 1024px) {
+
+}
+
+/* md */
+@media (max-width: 768px) {}
+
+/* sm */
+ @media (max-width: 640px) {}   /*  just show link instead of full source code link if the screen size is <= 640px */
+
+/* xs */
+@media (max-width: 475px) {
+    .projects-header h2{
+        font-size: 6rem;
+    }
+    
+}

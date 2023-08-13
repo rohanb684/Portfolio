@@ -22,7 +22,7 @@ const HeroSection = () => {
 
           // Second part with different custom style
           typewritter
-            .typeString("<span className='frontend'>FrontEnd Developer</span>")
+            .typeString("<h2>FrontEnd Developer</h2>")
             .start();
             }}
         />

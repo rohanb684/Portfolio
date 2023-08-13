@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "skill":"React JS",
+        "src": "./icons/react.png"
+    },
+    {
+        "id":2,
+        "skill":"HTML",
+        "src": "./icons/html-5.png"
+    },
+    {
+        "id":3,
+        "skill":"JavaScript",
+        "src": "./icons/js.png"
+    },
+    {
+        "id":4,
+        "skill":"Strapi",
+        "src": "./icons/strapi.png"
+    },
+    {
+        "id":5,
+        "skill":"CSS",
+        "src": "./icons/css.png"
+    },
+    {
+        "id":6,
+        "skill":"BootStrap",
+        "src": "./icons/bootstrap.png"
+    },
+    {
+        "id":7,
+        "skill":"Axios",
+        "src": "./icons/axios.png"
+    },
+    {
+        "id":8,
+        "skill":"SQL",
+        "src": "./icons/mysql.png"
+    },
+    {
+        "id":9,
+        "skill":"Excel",
+        "src": "./icons/excel.png"
+    },
+    {
+        "id":10,
+        "skill":"SASS",
+        "src":"./icons/sass.png"
+    },
+    {
+        "id":11,
+        "skill":"jQuery",
+        "src":"./icons/jquery.png"
+    }
+   
+]

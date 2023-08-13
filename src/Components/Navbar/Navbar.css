@@ -8,6 +8,7 @@
     height: 8rem;
     z-index: 99;
 }
+
 .navbar{
     display: flex;
     color: white;
@@ -22,6 +23,10 @@
     right: 0; */
     height: 8rem;
     /* background: #1F1F1F; */
+}
+
+.border-bottom{
+  border-bottom: lightgray 1px solid;
 }
 .nav-left{
     display: flex;
@@ -53,13 +58,58 @@
     cursor: pointer;
     font-size: 3rem;
 }
+
+
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .nav-left h2{
+        font-size: 3rem;
+    }
+    .nav-left h2 span{
+        color: red;
+        font-size: 4rem;
+    }
+
+    .nav-items{
+        font-size: 1.8rem;
+    }
+
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
 @media (max-width: 768px){
     .nav-mobile-icon{
         height: 100%;
         display: flex;
         justify-content:center ;
         align-items: center;
-        display: block;
+        /* display: block; */
     }
     .menu-icon.hide{
         display: none;

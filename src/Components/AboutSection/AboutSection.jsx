@@ -3,6 +3,7 @@ import AboutExperience from '../AboutExperience/AboutExperience';
 import AboutSkills from '../AboutSkills/AboutSkills';
 import AboutEducation from '../AboutEducation/AboutEducation';
 import './AboutSection.css'
+import { NavLink } from "react-router-dom";
 
 const AboutSection = () => {
 
@@ -26,7 +27,7 @@ const AboutSection = () => {
         <p>About Me</p>
         </div>
         <div className="about-right--description">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam, non quos magni ullam fuga ducimus animi nam minus explicabo quae possimus, cum officia placeat numquam vitae, perferendis laborum. Voluptas, tempora tenetur ab perspiciatis ut, explicabo nesciunt excepturi sed dolores necessitatibus numquam modi laborum accusantium assumenda? Adipisci molestias totam libero.</p>
+        <p>To obtain a challenging position as a Frontend Developer, leveraging my self-taught programming skills and passion for web development. I aim to contribute my knowledge and creativity to create engaging and user-friendly interfaces, while continuously expanding my skill set and staying up-to-date with the latest technologies in the field. With a strong commitment to learning and a drive for excellence, I am eager to collaborate with a dynamic team and make a meaningful impact in the world of web development.</p>
         </div>
 
      {/* --------About Section Right Categories---------     */}
@@ -42,11 +43,12 @@ const AboutSection = () => {
           {/* <AboutSkills className = "sub-content"  /> */}
           {/* <AboutSkills className = {`sub-content ${activeLink === 'Skills' ? 'active-tab':''} `}  /> */}
           {/* <AboutExperience className = {`sub-content ${activeLink === 'Experience' ? 'active-tab':''} `} /> */}
-          {activeLink === 'Skills' && <AboutSkills className="sub-content" />}
-          {activeLink === 'Experience' && <AboutExperience className="sub-content" />}
-          {activeLink === 'Education' && <AboutEducation className="sub-content" />}
+          {activeLink === 'Skills' && <AboutSkills className="sub-content " />}
+          {activeLink === 'Experience' && <AboutExperience className="sub-content " />}
+          {activeLink === 'Education' && <AboutEducation className="sub-content " />}
           </div>
       </div>
+      <button className="btn"><NavLink className="link" to={"/about"}>Know More</NavLink></button>
       </div>
     </div>
   );

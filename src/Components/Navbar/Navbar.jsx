@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import {Link} from 'react-scroll';
 import './Navbar.css'
 import {FiMenu} from 'react-icons/fi'
@@ -15,25 +15,31 @@ const Navbar = () => {
     }
   }
 
+  const location = useLocation();
+
+  const isAboutPage = location.pathname === '/about' || location.pathname === '/projects';
+
+  const addBorderBottom = isAboutPage ? "border-bottom" : "";
+
   return (
     <>
     <div className="nav-wrapper">
-    <div className="container navbar">
+    <div className={`container navbar ${addBorderBottom} `}>
       <div className="nav-left">
         <h2>Portfolio<span>.</span></h2>
       </div>
       <div className="nav-right">
         <div className="nav-items" style={getMenuStyles(isMenuOpen)}>
         <div className="nav-item">
-          <NavLink to={"/"} className="link">HomePage</NavLink>
+          <NavLink to={"/"} className="link" onClick={()=>{setIsMenuOpen((prev)=>!prev)}}>HomePage</NavLink>
         </div>
 
         <div className="nav-item">
-          <NavLink className="link" to={"/about"}>About</NavLink>
+          <NavLink className="link" to={"/about"} onClick={()=>{setIsMenuOpen((prev)=>!prev)}}>About</NavLink>
         </div>
 
         <div className="nav-item">
-          <NavLink className="link" to={"/projects"}>Projects</NavLink>
+          <NavLink className="link" to={"/projects"} onClick={()=>{setIsMenuOpen((prev)=>!prev)}}>Projects</NavLink>
         </div>
 
         <div className="nav-item">
@@ -42,7 +48,7 @@ const Navbar = () => {
                 spy={true} 
                 smooth={true} 
                 offset={-70} 
-                duration={500}>
+                duration={500} onClick={()=>{setIsMenuOpen((prev)=>!prev)}}>
             Contact
           </Link>
         </div>
@@ -54,12 +60,6 @@ const Navbar = () => {
       </div>
     </div>
     </div>
-    {/* <div className={`nav-mobile-menu ${isMenuOpen ? "active" : ""}`}>
-            <div className="nav-mobile-item"><NavLink className="link">Home</NavLink></div>
-            <div className="nav-mobile-item"><NavLink className="link">About</NavLink></div>
-            <div className="nav-mobile-item"><NavLink className="link">Projects</NavLink></div>
-            <div className="nav-mobile-item"><NavLink className="link">Contact</NavLink></div>
-        </div> */}
     </>
   );
 };

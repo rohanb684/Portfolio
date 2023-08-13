@@ -14,31 +14,27 @@
     padding-top: 15rem;
     gap: 8rem;
 }
-.hero-left--name{
-    font-size: 4rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
+
 .hero-left--name{
     color: #c95a5a;
     font-size: 6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 .typewritter{
     font-size: 5rem ;
     font-family: 'Roboto Mono', monospace;
 }
 
-/* .Typewriter__wrapper.data{
-    font-size: 5rem;
+
+.Typewriter__wrapper span{
+    font-size: 4rem;
+} 
+.Typewriter__wrapper h2{
+    font-size: 6rem;
+    color: rgb(114, 129, 134);
+    display: inline;
 }
-.Typewriter__wrapper.turned{
-    font-size: 5rem;
-    color: greenyellow;
-}
-.frontend{
-    font-size: 20rem;
-    color: #c95a5a;
-} */
 .Typewriter__cursor{
     font-size: 6.5rem;
     color: hsl(0, 51%, 57%);
@@ -62,4 +58,65 @@
     height: 100%;
 }
 
+/* 2xl */
+@media (max-width: 1536px) {
 
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .hero-left--name{
+        font-size: 3.7rem;
+    }
+    .typewritter{
+        font-size: 4rem ;
+        font-family: 'Roboto Mono', monospace;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .hero-right{
+        height: 70%;
+        margin-top: 3rem;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .hero-right{
+        display: none;
+    }
+    .hero-left{
+        padding-top: 10rem;
+    }
+    
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    .typewritter{
+        width: 100%;
+    }
+    .Typewriter__wrapper h2{
+        font-size: 90%;
+    }
+
+    .Typewriter__wrapper span{
+        font-size: 80%;
+    } 
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .Typewriter__wrapper span{
+        font-size: 80%;
+    } 
+
+    .Typewriter__wrapper h2{
+        font-size: 90%;
+    }
+
+  }
+  
+  

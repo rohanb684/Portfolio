@@ -2,7 +2,7 @@
     display: flex;
     gap: 4rem;
     align-items: center;
-    justify-content: space-around;
+
 }
 
 .icon-mid, .icon-left, .icon-right{
@@ -15,6 +15,7 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    
 }
 
 .icon p{
@@ -29,3 +30,52 @@
 .axios, .sql{
     background: lightgrey;
 }
+
+/* 2xl */
+@media (max-width: 1536px) {
+
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .icon img{
+        height: 2.5rem;
+    }
+    .icon p{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+
+}
+
+/* md */
+@media (max-width: 768px) {
+
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .icon img{
+        height: 2rem;
+    }
+    .icon p{
+        font-size: 1.7rem;
+        font-weight: 80;
+    }
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+
+}
+
+
+

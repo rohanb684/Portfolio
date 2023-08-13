@@ -4,6 +4,7 @@ import {
   RouterProvider,
   Outlet,
 } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
@@ -11,7 +12,22 @@ import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import Projects from './Pages/Projects/Projects'
 import Contact from './Pages/Contact/Contact'
+import { useEffect } from 'react';
 
+
+// const ChangeTitle = () =>{
+//   useEffect(()=>{
+//     const currentLocation = window.location.pathname;
+
+//     const titleMappings = {
+//       "/": "Portfolio",
+//       "/about": "Portfolio (About Me)",
+//       "/projects": "Portfolio (Projects)"
+//     }
+
+//     document.title = titleMappings[currentLocation] || "Portfolio"
+//   },[])
+// }
 
 
 const Layout = () =>{
@@ -30,19 +46,37 @@ const router = createBrowserRouter([
     children: [
       {
         path:"/",
-        element: <Home/>
+        element: (
+          <>
+            <Helmet>
+              <title>Portfolio</title>
+            </Helmet>
+            <Home />
+          </>
+        )
       },
       {
         path:"/about",
-        element: <About/>
+        element: (<>
+        <Helmet>
+              <title>Portfolio (About Me)</title>
+            </Helmet>
+        <About/></>)
       },
       {
         path:"/projects",
-        element: <Projects/>
+        element: (
+          <>
+            <Helmet>
+              <title>Portfolio (Projects)</title>
+            </Helmet>
+            <Projects />
+          </>
+        )
       },
       {
         path:"/contact",
-        element: <Contact/>
+        element: (<Contact/>)
       },
     ]
   }

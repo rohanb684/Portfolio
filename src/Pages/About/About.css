@@ -1,0 +1,111 @@
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap');
+
+
+.about{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    font-family: 'Noto Sans', sans-serif;
+    gap: 8rem;
+}
+.about .header h2{
+    font-size: 7rem;
+}
+.about .header p{
+    font-size: 2rem;
+    text-align: justify;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+.sub-header{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.exp-designation{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.exp-duration, .exp-brief{
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 350;
+}
+.roles-list ul li{
+    font-size: 2rem;
+    margin-left: 4rem;
+    font-weight: 100;
+}
+
+.switch h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.paras{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ------media queries------- */
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+
+/* lg */
+@media (max-width: 1024px) {}
+
+/* md */
+@media (max-width: 768px) {
+    .about .header h2{
+        font-size: 6rem;
+    }
+
+    .about .header p{
+        font-size: 1.7rem;
+    }
+    .sub-header{
+        font-size: 4.5rem;
+    }
+    .exp-designation{
+    font-size: 3rem;
+    }
+    .exp-duration, .exp-brief{
+        font-size: 2rem;
+    }
+    .roles-list ul li{
+        font-size: 1.7rem;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {}
+
+/* xs */
+@media (max-width: 475px) {
+    .about .header h2{
+        font-size: 5.7rem;
+    }
+
+    .about .header p{
+        font-size: 1.5rem;
+    }
+    .sub-header{
+        font-size: 4.3rem;
+    }
+    .exp-designation{
+    font-size: 2.7rem;
+    }
+    .exp-duration, .exp-brief{
+        font-size: 1.7rem;
+    }
+    .roles-list ul li{
+        font-size: 1.5rem;
+    }
+}

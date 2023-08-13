@@ -46,7 +46,7 @@ const AboutSkills = () => {
                 <img  src="./icons/mysql.png" alt="" />
               </div>
               <div className="icon">
-                <p>MS Excel</p>
+                <p>Excel</p>
                 <img src="./icons/excel.png" alt="" />
               </div>
           </div>

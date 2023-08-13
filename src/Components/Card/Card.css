@@ -1,19 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
 .card{
     height: 100%;
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
+    width: 100%;
+    /* box-shadow: cornsilk; */
 }
 
 .image-container{
     height: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:1rem;
+    padding-right: 1rem;
+    width: 100%;
+    text-align: center;
+    background: rgb(40, 73, 84);
 }
 
-.card img{
-    height: 100%;
-    display: block;
-    transition: all ease-in 0.5s;
+.image-container p{
+    font-family: 'Borel', cursive;
+    color: white;
+    font-size: 4rem;
+    transition: all ease-in 2s;
+    align-self: center;
 }
 
 .layer{
@@ -32,6 +45,9 @@
     text-align: center;
     gap: 1.5rem;
     flex-direction: column;
+    /* padding: 2rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-size: 1.6rem;
     transition: all ease-in 0.3s;
 }
@@ -47,10 +63,55 @@
     font-size: 2.2rem;
 }
 
+.layer h3{
+    font-size: 2.5rem;
+}
+.layer p{
+    font-size: 1.7rem;
+}
+
 .card:hover img{
     transform: scale(1.1);
 }
 
 .card:hover .layer{
     height: 100%;
+
 }
+
+.card:hover .image-container p{
+    display: none;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+
+/* lg */
+@media (max-width: 1024px) {
+    .image-container p{
+        font-size: 3rem;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .image-container p{
+        font-size: 3.5rem;
+    }
+    .card.visible .layer {
+        height: 100%;
+        /* Other styles to make the layer visible */
+      }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  
+
+}
+
+/* xs */
+@media (max-width: 475px) {}
