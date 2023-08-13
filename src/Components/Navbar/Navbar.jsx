@@ -26,7 +26,7 @@ const Navbar = () => {
     <div className="nav-wrapper">
     <div className={`container navbar ${addBorderBottom} `}>
       <div className="nav-left">
-        <h2>Portfolio<span>.</span></h2>
+        <NavLink to={"/"} className="link" ><h2>Portfolio<span>.</span></h2></NavLink>
       </div>
       <div className="nav-right">
         <div className="nav-items" style={getMenuStyles(isMenuOpen)}>

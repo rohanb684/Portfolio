@@ -3,7 +3,7 @@
         "id":1,
         "title":"Portfolio Website",
         "description":"Crafted using React.js, my portfolio website showcases my dedication to modern web development. Seamlessly managing communication, I've employed Formspree to handle messages received through the Contact section. For smooth and efficient post requests, Axios comes into play.",
-        "link":"rohansingh.in",
+        "link":"https://rohansingh.in/",
         "srccode":"https://github.com/rohanb684/Portfolio.git",
         "image":""
     },
@@ -11,7 +11,7 @@
         "id":2,
         "title":"E-Commerce website",
         "description":"A dynamic and responsive E-Commerce website developed with React.js, showcasing my proficiency in modern web development. Leveraged the power of the useContext hook to establish global states, providing seamless user interactions. The site utilizes the fakeStoreAPI to efficiently fetch and display product data.",
-        "link":"ecommerce.rohansingh.in",
+        "link":"https://ecommerce.rohansingh.in/",
         "srccode":"https://github.com/rohanb684/E-Commerce-Website.git",
         "image":""
     },
@@ -19,7 +19,7 @@
         "id":3,
         "title":"Sticky Notes App",
         "description":"Developed entirely with vanilla JavaScript, the Sticky Notes application showcases my expertise in frontend programming. By harnessing the capabilities of local storage, I've implemented seamless Create, Read, Update, and Delete (CRUD) operations.",
-        "link":"stickynotes.rohansingh.in",
+        "link":"https://stickynotes.rohansingh.in/",
         "srccode":"https://github.com/rohanb684/sticky_notes.git",
         "image":""
     }
